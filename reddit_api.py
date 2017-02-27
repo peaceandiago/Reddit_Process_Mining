@@ -7,11 +7,11 @@ This parses submission and comments from reddit r/PersonalFinanceCanada
 Output: URL(unique ID), Submission Title, SCORE, USER, Date, Comment, SCORE USER, Date, More_Comments, SCORE, USER, Date
 """
 
-reddit = praw.Reddit(user_agent='Getting comments',
-                     client_id='CLIENT_ID', client_secret="SECRET",
-                     username='USERNAME', password='PASSWORD')
+reddit = praw.Reddit(user_agent='Getting comments (by /u/peaceandiago)',
+                     client_id='xymyKhF83LKg0w', client_secret="dT1veEiWyBo2wSM5ZaBe7oijtY0",
+                     username='peaceandiago', password='lckmihrt')
 
-personalfinancecanada = reddit.subreddit('PersonalFinanceCanada').hot(limit=25)
+personalfinancecanada = reddit.subreddit('PersonalFinanceCanada').hot(limit=100)
 URL_LIST = [] #list of URL
 SUBMISSION= [] # Submission ID, Title of submission, Score, Time/Date, Author
 COMMENT = [] #Comment ID, Submission ID, Comment, Score, Time/Date, Author
